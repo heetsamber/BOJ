@@ -1,16 +1,14 @@
 fun main(args:Array<String>){
-    val X = 500000
-    val a = IntArray(X+1){1}
+    val x = 246_912
+    val a = IntArray(x+1){1}
     a[0] = 0
     a[1] = 0
-    for(p in 2..X) {
-        if(a[p] == 1) {
-            for(j in 2*p..X step p) {
-                a[j] = 0
-            }
+    for(i in 2..x) {
+        if(a[i] == 1) {
+            for(j in 2*i..x step i) { a[j] = 0}
         }
     }
-    for(i in 2..X) {
+    for(i in 2..x) {
         a[i] += a[i-1]
     }
     while(true){
