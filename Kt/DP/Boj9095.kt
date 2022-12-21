@@ -1,6 +1,6 @@
 fun main(){
     val t = readln().toInt()
-    var n : Int = 0; var cnt : Int; var max = 0
+    var n : Int = 0; var max = 0
     val arr = arrayListOf<Int>()
     for(i in 0 until t){
         n = readln().toInt()
