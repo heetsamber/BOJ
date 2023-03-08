@@ -17,14 +17,14 @@ public class Boj2217 {
         }
 
         Arrays.sort(arr, Collections.reverseOrder());
-
+        // 최대 무게
         max = arr[0];
 
         for(int i = 1; i < n; i++){
-            int cur = arr[i] * (i + 1);
-            if(cur > max) {
+            
+            int cur = arr[i] * (i + 1); // 현재 i 번째 로프까지 들 수 있는 최대 무게
+            if(cur > max) {             // 기존 무게보다 많이 들 수 있다면 갱신
                 max = cur;
-                continue;
             }
         }
         System.out.print(max);
