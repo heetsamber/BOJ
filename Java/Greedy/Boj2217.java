@@ -17,8 +17,7 @@ public class Boj2217 {
         }
 
         Arrays.sort(arr, Collections.reverseOrder());
-        // 최대 무게
-        max = arr[0];
+        max = arr[0];                   // 최대 무게
 
         for(int i = 1; i < n; i++){
             
